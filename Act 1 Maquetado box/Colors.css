@@ -1,0 +1,168 @@
+
+/*Seccion del navigation*/
+.navigation {
+  background-color: rgb(3, 250, 44);
+  width: 1000px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between; /* Dispersar las cajas */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.navigation .caja {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+
+  height: 50px;
+  width: 180px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navigation .caja p {
+  color: aliceblue;
+
+}
+
+/*Seccion del header*/
+.HeaderBox {
+  display: flex;
+  background-color: rgb(125, 147, 212);
+  width: 1000px;
+  height: 300px;
+  align-items: center;
+}
+
+.HeaderBox .Banner {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center; /* Centrar verticalmente */
+  height: 250px;
+  width: 800px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.HeaderBox .Banner p {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-align: center;
+ 
+}
+
+.Services {
+  display: flex;
+  flex-direction: column; /* Alinear las cajas verticalmente */
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 290px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.Services .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 175px;
+  height: 75px;
+  margin-bottom: 10px; /* Espacio entre las cajas */
+}
+
+.Services .box p {
+  color: aliceblue;
+  margin: 0;
+  text-align: center;
+}
+
+/*Main*/
+
+.Main{
+  background-color: yellow;
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main .Aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 200px;
+  height: 495px;
+  margin-right: 5px;
+
+}
+
+.Main .Aside p{
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.Main .Aside2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 200px;
+  height: 495px;
+  margin-left: 5px;
+
+}
+
+.Main .Aside2 p{
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.Main .Article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 575px;
+  height: 495px;
+
+}
+
+.Main .Article p{
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+/*Footer*/
+
+.Footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(227, 166, 43);
+  width: 1000px;
+  height: 50px;
+}
+
+.Footer p{
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.boton{
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 20px;
+}
