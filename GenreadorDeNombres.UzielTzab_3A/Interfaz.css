@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(135deg, #64c99f, #e649cb);
+
+}
+h1{
+    font-size: 70px;
+    font-family: "Abril Fatface", cursive;
+    text-align: center;
+}
+span{
+    font-family: "Magnolia Sky", cursive;
+    font-size: 30px;
+}
+#PanelPrinsipal{
+    padding: 45px;
+    border-radius: 60px;
+    background: linear-gradient(135deg, #64bdc9, #4bb14b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nombre-generado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(155, 180, 10);
+    font-family: "Magnolia Sky", cursive;
+}
+#nombre-generado{
+    font-size:  25px;
+}
+#BotonAnimado{
+    width: 300px;
+    height: 100px;
+    padding: 6px;
+    border: 0px;
+    background-color: rgb(118, 158, 194);
+    border-radius: 20px;
+    transition: transform 1s ease;
+}
+#BotonAnimado:hover{
+    transform: rotate(360deg);
+}
+
+@keyframes carga {
+    0% { content: ""; }
+    100% { content: "."; }
+  }
+  
+  #nombre-generado::after {
+    content: "";
+    animation: carga 1s linear infinite;
+  }
