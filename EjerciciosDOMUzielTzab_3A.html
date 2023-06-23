@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS DOM</title>
+</head>
+<body>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <!-- Inciso a -->
+    <p id="demo"></p>
+    <script>document.getElementById("demo").innerHTML="Hola Mundo";</script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <p id="p1">Hola mundo</p>
+    <script>document.getElementById("p1").innerHTML="Nuevo Texto!";</script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <h1 id="titulo">Encabezado Viejo</h1>
+    <script>
+    const elemento = document.getElementById("titulo");
+    elemento.innerHTML="Nuevo Encabezado";
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        const element = document.getElementByName("p");
+        const x = document.getElementById("main");
+        console.log(x);
+        const y = x.getElementsByTagName("p");
+        console.log(y);
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        // const x = document. getElementsByClassName("intro") console.log(x);
+    </script>
+    <p class="intro">este es un ejemplo</p>
+    <p class="intro">este es otro ejemplo</p>
+    <script>
+        // const x = document.querySelectorAll("p.intro");
+    </script>
+    <script>
+        const h1Element = document.querySelectorAll("ul > li");
+        console.log(h1Element);
+        const list = document.querySelector(".list");
+        console.log(list);
+        const listaDeElementos = document.querySelectorAll("ul > li");
+
+        listaDeElementos.forEach((item) => {
+            console.log(item);
+        })
+
+        const h1 = document.querySelector("h1");
+        h1.style.color = "blue";
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        // const x = document.forms["form1"];
+        // let texto = "";
+        // for(let i = 0; i < x.length; i++){
+        //     texto += x.elements[i].value + "<br>";
+        // }
+        // document.getElementById("demo").innerHTML = texto;
+        // console.log(x);
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        let lista = document.createElement("ul");
+        document.body.appendChild(lista);
+
+        let elemento1 = document.createElement("li");
+        elemento1.textContent = "flor";
+        lista.appendChild(elemento1);
+
+        let elemento2 = document.createElement("li");
+        elemento2.textContent = "jaguar";
+        lista.appendChild(elemento2);
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        const button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            alert("Gracias por dar click");
+        });
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        function validarFormulario() {
+            let x = document.forms["mi formulario"]["nombre"]. value;
+            if(x === ""){
+                alert("Se debe completar el nombre");
+                return false;
+            }
+        }
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        function miFunction(){
+            let x = document.getElementById("numero").value;
+            let texto;
+            if(isNaN(x) || x < 1 || x > 10){
+                texto = "Entrada no válida";
+            }else{
+                texto = "Entrada correcta";
+            }
+            document.getElementById("demo").innerHTML = texto;
+        }
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        document.getElementById("miImagen").src = "cat.jpg";
+    </script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <script>
+        document.getElementById("demo").innerHTML = "Fecha: " + Date();
+    </script>
+</body>
+</html>
