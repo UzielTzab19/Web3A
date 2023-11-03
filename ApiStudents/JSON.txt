@@ -1,0 +1,11 @@
+INSERCCION DE DATOS POST:
+{
+  "name": "Carlos",
+  "age": 33,
+  "grades": [
+    {
+      "course": "Primero",
+      "score": 9.9
+    }
+  ]
+}
